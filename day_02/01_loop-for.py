@@ -1,41 +1,59 @@
-languages = ['Swift', 'Python', 'Go', 'JavaScript']
+# import constant
+from . import constant
 
-# run a loop for each item of the list
+# -----------------------------------------------------------------
+# Run a loop for each item of the list.
+# -----------------------------------------------------------------
+languages = ['C#', 'Python', 'Go', 'JavaScript']
+
 for language in languages:
     print(language)
 
+print(constant.seperator)
 
-# use of range() to define a range of values
-values = range(4)
+# -----------------------------------------------------------------
+# Use of range() to define a range of values
+# -----------------------------------------------------------------
+items = range(4)
 
-# iterate from i = 0 to i = 3
-for i in values:
-    print(i)
+for item in items:
+    print(item)
 
-# ----------------------------------------------------------
-# It is not mandatory to use items of a sequence within a for loop. For example,
-languages = ['Swift', 'Python', 'Go']
+print(constant.seperator)
+
+# -----------------------------------------------------------------
+# It is not mandatory to use items of a sequence within a for loop. For example:
+# -----------------------------------------------------------------
+languages = ['C#', 'Python', 'Go', 'JavaScript']
 
 for language in languages:
     print('Hello')
     print('Hi')
 
-# ----------------------------------------------------------
+print(constant.seperator)
+
+# -----------------------------------------------------------------
 # If we do not intend to use items of a sequence within the loop, we can write the loop like this:
-languages = ['Swift', 'Python', 'Go']
+# -----------------------------------------------------------------
+languages = ['C#', 'Python', 'Go', 'JavaScript']
 
 for _ in languages:
     print('Hello')
     print('Hi')
 
-# ----------------------------------------------------------
-# for loop with else
+print(constant.seperator)
+
+# -----------------------------------------------------------------
+# For loop with else
+# -----------------------------------------------------------------
 digits = [0, 1, 5]
 
 for i in digits:
     print(i)
 else:
     print("No items left.")
+
+print(constant.seperator)
 
 # ----------------------------------------------------------
 
