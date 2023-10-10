@@ -50,14 +50,3 @@ print(alphabets)
 # -----------------------------------------------------------------
 vowels = {'a', 'e', 'i' , 'o', 'u'} 
 print(vowels)
-
-# -----------------------------------------------------------------
-# import constant file which we have created earlier
-# -----------------------------------------------------------------
-print(seperator)
-import constant
-
-print(constant.PI) # prints 3.14
-print(constant.GRAVITY) # prints 9.8
-print(constant.site_name) # prints 3.14
-print()
