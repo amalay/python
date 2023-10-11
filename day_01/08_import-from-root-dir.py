@@ -24,8 +24,7 @@ print("\n-----------------------------------------------------------------")
 sys.path.append(parent_dir)
 
 # Importing constant from root directory.
-# import constant
-from . import constant
+import constant
 
 print(constant.MESSAGE)     # Prints: Constant file is in root directory!
 print(constant.SEPERATOR)

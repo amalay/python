@@ -1,5 +1,4 @@
-# import constant
-from . import constant
+import constant
 
 # -----------------------------------------------------------------
 # Run a loop for each item of the list.
@@ -9,7 +8,7 @@ languages = ['C#', 'Python', 'Go', 'JavaScript']
 for language in languages:
     print(language)
 
-print(constant.seperator)
+print(constant.SEPERATOR)
 
 # -----------------------------------------------------------------
 # Use of range() to define a range of values
@@ -19,7 +18,7 @@ items = range(4)
 for item in items:
     print(item)
 
-print(constant.seperator)
+print(constant.SEPERATOR)
 
 # -----------------------------------------------------------------
 # It is not mandatory to use items of a sequence within a for loop. For example:
@@ -30,7 +29,7 @@ for language in languages:
     print('Hello')
     print('Hi')
 
-print(constant.seperator)
+print(constant.SEPERATOR)
 
 # -----------------------------------------------------------------
 # If we do not intend to use items of a sequence within the loop, we can write the loop like this:
@@ -41,7 +40,7 @@ for _ in languages:
     print('Hello')
     print('Hi')
 
-print(constant.seperator)
+print(constant.SEPERATOR)
 
 # -----------------------------------------------------------------
 # For loop with else
@@ -53,7 +52,7 @@ for i in digits:
 else:
     print("No items left.")
 
-print(constant.seperator)
+print(constant.SEPERATOR)
 
 # ----------------------------------------------------------
 

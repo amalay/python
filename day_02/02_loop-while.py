@@ -1,60 +1,66 @@
-# program to display numbers from 1 to 5
+import constant
 
-# initialize the variable
+# -----------------------------------------------------------------
+# Programm to print numbers from 1 to 5
+# -----------------------------------------------------------------
 i = 1
 n = 5
 
-# while loop from i = 1 to 5
 while i <= n:
     print(i)
     i = i + 1
 
-# -----------------------------------------------------
-# program to calculate the sum of numbers
-# until the user enters zero
+print(constant.SEPERATOR)
 
+# -----------------------------------------------------------------
+# Program to calculate the sum of numbers until the user enters zero
+# -----------------------------------------------------------------
 total = 0
 
 number = int(input('Enter a number: '))
 
-# add numbers until number is zero
-while number != 0:
-    total += number    # total = total + number
+while number != 0:          
+    total = total + number      # Add numbers until number is zero        
+    number = int(input('Enter a number: '))     # Take input again
     
-    # take integer input again
-    number = int(input('Enter a number: '))
-    
+print('Total =', total)
+print(constant.SEPERATOR)
 
-print('total =', total)
-
-# ----------------------------------------
+# -----------------------------------------------------------------
+# Programm to test condition which is always True
+# -----------------------------------------------------------------
 age = 32
 
-# the test condition is always True
 while age > 18:
     print('You can vote')
 
-# --------------------------------
+print(constant.SEPERATOR)
+
+# -----------------------------------------------------------------
+# While loop with else
+# -----------------------------------------------------------------
 counter = 0
 
 while counter < 3:
-    print('Inside loop')
+    print('Inside while loop.')
     counter = counter + 1
 else:
-    print('Inside else')
+    print('Inside else condition.')
 
-#----------------------------------------
+print(constant.SEPERATOR)
+
+# -----------------------------------------------------------------
+# While loop with break and else
+# -----------------------------------------------------------------
 counter = 0
 
-while counter < 3:
-    # loop ends because of break
-    # the else part is not executed 
-    if counter == 1:
+while counter < 3:    
+    if counter == 1:    # Loop ends because of break the else part is not executed 
         break
 
-    print('Inside loop')
+    print('Inside while loop.')
     counter = counter + 1
 else:
-    print('Inside else')
+    print('Inside else condition.')
 
-    
+print(constant.SEPERATOR)
