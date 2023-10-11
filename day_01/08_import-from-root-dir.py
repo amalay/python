@@ -1,6 +1,6 @@
 
 # -----------------------------------------------------------------
-# Import from parent directory using os.path.dirname method
+# Import from parent directory using os.path.dirname method (Syntax: from {file} import {class})
 # -----------------------------------------------------------------
 import sys
 import os
@@ -20,11 +20,16 @@ parent_dir = os.path.dirname(current_dir)
 print('Parent directory: ', parent_dir)
 print("\n-----------------------------------------------------------------")
 
-# Append parent directory to system path.
-sys.path.append(parent_dir)
+# Add parent directory to system path.
+sys.path.insert(0, parent_dir)  # sys.path.insert(0, parent_dir) OR sys.path.append(parent_dir)
 
-# Importing constant from root directory.
-import constant
+# Print all paths exist in sys.path
+# for item in sys.path:
+#     print(item)
+# print("\n-----------------------------------------------------------------")
 
-print(constant.MESSAGE)     # Prints: Constant file is in root directory!
-print(constant.SEPERATOR)
+# Importing constant file from root directory.
+from constant import Messages, Maths
+
+print(Messages.MESSAGE)     # Prints: Constant file is in root directory!
+print(Messages.SEPERATOR)

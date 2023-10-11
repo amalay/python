@@ -1,6 +1,6 @@
 
 # -----------------------------------------------------------------
-# Import from other directory
+# Import from other directory (Syntax: from {directory} import {file})
 # -----------------------------------------------------------------
 import sys
 
